@@ -33,7 +33,7 @@ class Solution:
 
             i += 1
 
-        return buff
+        return [list(item) for item in buff]
 
 solution = Solution()
 sample = [-1,0,1,2,-1,-4]

@@ -1,5 +1,6 @@
-# Category: Easy
+# difficulty: easy
 # https://leetcode.com/problems/two-sum/description/
+
 from typing import List
 
 class Solution:
