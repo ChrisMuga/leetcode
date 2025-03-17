@@ -1,5 +1,6 @@
 # difficutly: easy
 # https://leetcode.com/problems/divide-array-into-equal-pairs/description 
+# NOTE: Initial pass, could be optimized. Current time-complexity O(2n) -> O(n), same for space-complexity O(s)
 from typing import List
 
 class Solution:
