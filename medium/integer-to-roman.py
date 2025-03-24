@@ -3,7 +3,7 @@
 
 class Solution:
     def intToRoman(self, num: int) -> str:
-        Roman = ""
+        roman = ""
         storeIntRoman = [
             [1000, "M"], 
             [900, "CM"], 
@@ -22,7 +22,7 @@ class Solution:
 
         for i in range(len(storeIntRoman)):
             while num >= storeIntRoman[i][0]:
-                Roman += storeIntRoman[i][1]
+                roman += storeIntRoman[i][1]
                 num -= storeIntRoman[i][0]
-        return Roman
+        return roman
 
