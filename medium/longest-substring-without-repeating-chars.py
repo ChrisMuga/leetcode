@@ -15,6 +15,7 @@
 #         while(i <= len(s) - 1):
 #             curr = ""
 #
+#             # This inner loop is O(N), resulting into O(N ^ 2), because it is a string and checking for a char in a string is O(N)  
 #             while(s[j] not in curr):
 #                 print(s, j)
 #                 curr += s[j]
@@ -32,12 +33,6 @@
 #
 #
 #         return current_max
-
-solution = Solution()
-ans = solution.lengthOfLongestSubstring("c")
-print(ans)
-
-
 """
     input: pwwkew
     pw
@@ -60,3 +55,37 @@ print(ans)
 
 
 """
+
+"""
+
+"""
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        char_set = set()
+        limit = len(s) - 1
+
+        i = 0
+        j = 0
+
+        curr_max = 0
+
+        while j <= limit:
+            letter = s[j]
+            while letter in char_set:
+                first_char_in_set = s[i]
+                char_set.remove(first_char_in_set)
+                i += 1
+            char_set.add(letter)
+            # (j-i) + 1: Because we're getting the difference of the indices, and then adding 1
+            # since indices start from 0
+            curr_max = max(curr_max, (j-i) + 1)
+            j += 1
+
+        return curr_max
+
+solution = Solution()
+ans = solution.lengthOfLongestSubstring("pwwkew")
+print(ans)
+
+
