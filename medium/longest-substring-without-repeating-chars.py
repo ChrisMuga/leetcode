@@ -1,5 +1,6 @@
 # difficulty: medium
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+# Video explanation: https://www.youtube.com/watch?v=wiGpQwVHdE0
 
 # Given a string, s, find the length of the longest substring without duplicate characters.
 # TODO: Implement O(n) solution with sliding window
