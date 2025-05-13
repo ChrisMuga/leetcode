@@ -1,11 +1,6 @@
 # difficulty: easy
 # https://leetcode.com/problems/remove-element/description/
 
-"""
-    two pointers - i, j
-    while i < j:
-
-"""
 from typing import List
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
