@@ -61,6 +61,8 @@
 
 """
 
+# O(N) solution, using a set and a 2 pointer strategy, popping it when duplicates are found.
+# 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         char_set = set()
