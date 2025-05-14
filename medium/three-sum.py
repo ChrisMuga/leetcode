@@ -15,6 +15,7 @@ class Solution:
             k = len(nums) - 1
 
             first_num = nums[i]
+
             while j < k:
                 second_num = nums[j]
                 third_num = nums[k]
