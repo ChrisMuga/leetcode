@@ -25,7 +25,7 @@ class Solution:
         for i in range(2, n + 1):
             buff.append(buff[i-1] + buff[i-2])
 
-        print(buff[n])
+        return buff[n]
 
 
 
