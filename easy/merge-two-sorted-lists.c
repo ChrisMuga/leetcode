@@ -28,7 +28,8 @@ int main(){
 	struct ListNode* test = createNode(1);
 
 	if(test != NULL){
-		printf("%d", test->val);
+		test->next = createNode(3);
+		printf("%d", test->next->val);
 	}
 	return 0;
 }
