@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Definition for singly-linked list.
 struct ListNode {
@@ -6,22 +7,27 @@ struct ListNode {
 	struct ListNode *next;
 };
 
-struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
- struct ListNode* res = { 4, NULL }; 
+// struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
+// 	struct ListNode* res = { 4, NULL }; 
+//
+// 	return res;
+// }
 
- return res;
+struct ListNode* createNode(int val){
+	struct ListNode* res = (struct ListNode*)(malloc(sizeof(struct ListNode)));
+
+	if(res != NULL){
+		res->val = val;
+		res->next = NULL;
+	}
+
+	return res;
 }
 
 int main(){
-	/* struct ListNode* c = {4, NULL}; */
-	/* struct ListNode* b = {3, c}; */
-	/* struct ListNode* a =  {1, b}; */
+	struct ListNode* test = createNode(1);
 
-	struct ListNode* test;
-	test->val = 10;
-	test->next = NULL;
-
-	if(test){
+	if(test != NULL){
 		printf("%d", test->val);
 	}
 	return 0;
