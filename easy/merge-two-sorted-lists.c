@@ -27,9 +27,12 @@ struct ListNode* createNode(int val){
 int main(){
 	struct ListNode* test = createNode(1);
 
+	// TODO: Start working with currentListNode
+
 	if(test != NULL){
 		test->next = createNode(3);
 		printf("%d", test->next->val);
 	}
+
 	return 0;
 }
