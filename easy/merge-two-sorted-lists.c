@@ -25,14 +25,29 @@ struct ListNode* createNode(int val){
 }
 
 int main(){
-	struct ListNode* test = createNode(1);
+	// List 1
+	struct ListNode* l1 = createNode(1);
+
+
+	if(l1 != NULL){
+		l1->next = createNode(3);
+		l1->next->next = createNode(8);
+		// printf("%d", l1->next->next->val);
+	}
+
+	// List 2
+	struct ListNode* l2 = createNode(1);
 
 	// TODO: Start working with currentListNode
 
-	if(test != NULL){
-		test->next = createNode(3);
-		printf("%d", test->next->val);
+	if(l2 != NULL){
+		l2->next = createNode(3);
+		l2->next->next = createNode(18);
+		printf("%d", l2->next->next->val);
 	}
+
+
+	// TODO: Start working with currentListNode
 
 	return 0;
 }
