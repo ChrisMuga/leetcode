@@ -25,7 +25,8 @@ struct ListNode* createNode(int val){
 }
 
 int main(){
-	// List 1
+	// List 1 
+	// [1 -> 3 -> 8]
 	struct ListNode* l1 = createNode(1);
 
 
@@ -36,18 +37,20 @@ int main(){
 	}
 
 	// List 2
-	struct ListNode* l2 = createNode(1);
+	// [ 2 -> 7 -> 18]
+	struct ListNode* l2 = createNode(2);
 
 	// TODO: Start working with currentListNode
 
 	if(l2 != NULL){
-		l2->next = createNode(3);
+		l2->next = createNode(7);
 		l2->next->next = createNode(18);
 		printf("%d", l2->next->next->val);
 	}
 
 
 	// TODO: Start working with currentListNode
+	// Expected result: [1 -> 2 -> 3 -> 7 -> 8 -> 18]
 
 	return 0;
 }
