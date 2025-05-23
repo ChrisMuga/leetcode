@@ -7,11 +7,12 @@ struct ListNode {
 	struct ListNode *next;
 };
 
-// struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
-// 	struct ListNode* res = { 4, NULL }; 
-//
-// 	return res;
-// }
+ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
+
+	printf("%d\n", list1->val);
+	printf("%d\n", list2->next->next->val);
+ 	return list2;
+}
 
 struct ListNode* createNode(int val){
 	struct ListNode* res = (struct ListNode*)(malloc(sizeof(struct ListNode)));
@@ -45,8 +46,9 @@ int main(){
 	if(l2 != NULL){
 		l2->next = createNode(7);
 		l2->next->next = createNode(18);
-		printf("%d", l2->next->next->val);
 	}
+
+	mergeTwoLists(l1, l2);
 
 
 	// TODO: Start working with currentListNode
