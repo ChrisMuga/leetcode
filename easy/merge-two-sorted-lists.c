@@ -7,7 +7,7 @@ struct ListNode {
 	struct ListNode *next;
 };
 
- struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
+struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
 	if(list1 != NULL){
 		struct ListNode* currentNode = list1; 
 		while(currentNode != NULL){
@@ -16,7 +16,7 @@ struct ListNode {
 		}
 	}
 
- 	return list2;
+	return list2;
 }
 
 struct ListNode* createNode(int val){
