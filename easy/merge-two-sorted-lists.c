@@ -8,8 +8,14 @@ struct ListNode {
 };
 
  struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
-	printf("%d\n", list1->val);
-	printf("%d\n", list2->next->next->val);
+	if(list1 != NULL){
+		struct ListNode* currentNode = list1; 
+		while(currentNode != NULL){
+			printf("%d\n", currentNode->val);
+			currentNode = currentNode->next;
+		}
+	}
+
  	return list2;
 }
 
