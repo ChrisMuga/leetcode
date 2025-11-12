@@ -3,11 +3,17 @@
 
 from typing import List
 
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        nums.sort() # Sort first
-        buff = set() # Using a buffer set here to prevent duplicates
-        
+        # The sort() function is probably Tim sort, which is a hybrid of merge sort and insertion sort
+        # Time Complexity:
+        # It has an average and worst-case time complexity of O(n log n),
+        # but can achieve O(n) in the best case when the data is already mostly sorted.
+
+        nums.sort()
+        buff = set()  # Using a buffer set here to prevent duplicates
+
         i = 0
 
         while i < len(nums) - 2:
@@ -31,12 +37,12 @@ class Solution:
                     j += 1
                     k -= 1
 
-
             i += 1
 
         return [list(item) for item in buff]
 
+
 solution = Solution()
-sample = [-1,0,1,2,-1,-4]
+sample = [-1, 0, 1, 2, -1, -4]
 ans = solution.threeSum(nums=sample)
 print(ans)

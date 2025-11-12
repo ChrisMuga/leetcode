@@ -1,12 +1,13 @@
 # difficulty: medium
 # https://leetcode.com/problems/integer-to-roman
 
+
 class Solution:
     def intToRoman(self, num: int) -> str:
         roman = ""
         storeIntRoman = [
-            [1000, "M"], 
-            [900, "CM"], 
+            [1000, "M"],
+            [900, "CM"],
             [500, "D"],
             [400, "CD"],
             [100, "C"],
@@ -17,7 +18,7 @@ class Solution:
             [9, "IX"],
             [5, "V"],
             [4, "IV"],
-            [1, "I"]
+            [1, "I"],
         ]
 
         for i in range(len(storeIntRoman)):
@@ -25,4 +26,3 @@ class Solution:
                 roman += storeIntRoman[i][1]
                 num -= storeIntRoman[i][0]
         return roman
-

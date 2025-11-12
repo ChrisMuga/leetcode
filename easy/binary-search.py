@@ -1,6 +1,7 @@
 # difficulty: easy
 # https://leetcode.com/problems/binary-search/
 
+
 class Solution(object):
     def search(self, nums, target):
         """
@@ -18,10 +19,10 @@ class Solution(object):
                 return y
             x += 1
             y -= 1
-        
+
         return -1
+
 
 solution = Solution()
 ans = solution.search([5], 5)
 print(ans)
-

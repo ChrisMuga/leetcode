@@ -1,7 +1,8 @@
 # difficutly: easy
-# https://leetcode.com/problems/divide-array-into-equal-pairs/description 
+# https://leetcode.com/problems/divide-array-into-equal-pairs/description
 # NOTE: Initial pass, could be optimized. Current time-complexity O(2n) -> O(n), same for space-complexity O(s)
 from typing import List
+
 
 class Solution:
     def divideArray(self, nums: List[int]) -> bool:
@@ -24,8 +25,9 @@ class Solution:
 
         return True
 
+
 # sample = [3,2,3,2,2,2]
-sample = [1,2,3,4]
+sample = [1, 2, 3, 4]
 solution = Solution()
 ans = solution.divideArray(sample)
 print(ans)

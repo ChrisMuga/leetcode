@@ -16,7 +16,7 @@
 #         while(i <= len(s) - 1):
 #             curr = ""
 #
-#             # This inner loop is O(N), resulting into O(N ^ 2), because it is a string and checking for a char in a string is O(N)  
+#             # This inner loop is O(N), resulting into O(N ^ 2), because it is a string and checking for a char in a string is O(N)
 #             while(s[j] not in curr):
 #                 print(s, j)
 #                 curr += s[j]
@@ -35,34 +35,35 @@
 #
 #         return current_max
 """
-    input: pwwkew
-    pw
-    w
-    wke
-    kew 
-    ew
-    w
+input: pwwkew
+pw
+w
+wke
+kew
+ew
+w
 
-    i = 0
-    j = 0 + 1
+i = 0
+j = 0 + 1
 
-    buff = []
-    while i < len(s) - 1:
-    curr = ""
-        while !curr.includes i:
-            curr += i
-        buff << curr
-        i += 1
+buff = []
+while i < len(s) - 1:
+curr = ""
+    while !curr.includes i:
+        curr += i
+    buff << curr
+    i += 1
 
-
-"""
 
 """
 
 """
+
+"""
+
 
 # O(N) solution, using a set and a 2 pointer strategy, popping it when duplicates are found.
-# 
+#
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         char_set = set()
@@ -82,13 +83,12 @@ class Solution:
             char_set.add(letter)
             # (j-i) + 1: Because we're getting the difference of the indices, and then adding 1
             # since indices start from 0
-            curr_max = max(curr_max, (j-i) + 1)
+            curr_max = max(curr_max, (j - i) + 1)
             j += 1
 
         return curr_max
 
+
 solution = Solution()
 ans = solution.lengthOfLongestSubstring("pwwkew")
 print(ans)
-
-
