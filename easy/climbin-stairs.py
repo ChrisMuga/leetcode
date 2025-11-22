@@ -4,6 +4,7 @@ https://leetcode.com/problems/climbing-stairs/description/
 """
 
 
+# Basically the climbing chairs problem is a FIBONACCI problem
 class Solution:
     # # Using recursion - recursive backtracking
     # # O(2 ^ N)
