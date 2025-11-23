@@ -9,11 +9,11 @@ Conditions
 - There's exactly one person that satisfies the above 2 conditions 👆 
 Strategy
 ----
-- in a network of nodes, we need to compare the number of incoming connections vs outgoing connections
-- we need to keep this data of connections in some sort of hash-map or dict
-- after computing the incoming and outgoing connections, we compare with the conditions stated above
-- the node that satisfies those conditions is our town judge
-- otherwise, simply return -1
+- In a network of nodes, we need to compare the number of incoming connections vs outgoing connections
+- We need to keep this data of connections in some sort of hash-map or dict
+- After computing the incoming and outgoing connections, we compare with the conditions stated above
+- The node that satisfies those conditions is our town judge
+- Otherwise, simply return -1
 """
 class Solution:
 	def findJudge(self, n: int, trust: List[List[int]]) -> int:
